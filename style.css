@@ -1,0 +1,120 @@
+/* typography */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body */
+html{
+    height: 100%;
+}
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+/* card */
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 300px;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+picture img{
+    width: 100%;
+    border-radius: 0.75rem;
+}
+.nft-image{
+    position: relative;
+}
+.nft-image div{
+    border-radius: 0.75rem;
+    background-color: hsl(178, 100%, 50%, 60%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;    
+}
+.nft-image div:hover{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+.nft-image div img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+.name{
+    color: hsl(178, 100%, 50%);
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+.nft_id:hover{
+    cursor: pointer;
+}
+.description{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    margin-bottom: 0.75rem;
+    font-weight: 300;
+}
+.price_time{
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+}
+.price_time p{
+    display: flex;
+    align-items: center;
+}
+.price_time img{
+    margin-right: 0.35rem;
+}
+.time{
+    color: hsl(215, 51%, 70%);
+}
+.price{
+    color: hsl(178, 100%, 50%);
+}
+hr{
+    margin-bottom: 0.75rem;
+    border: 1px solid hsl(215, 32%, 27%);
+
+}
+.owner p{
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+.owner_name{
+    margin-left: 0.25rem;
+    color: hsl(178, 100%, 50%);
+}
+.owner_name:hover{
+    cursor: pointer;
+}
+.image-avatar{
+    width: 10%;
+    margin-right: 0.5rem;
+    border-radius: 100%;
+    border: 0.5px solid yellowgreen;
+}
+
